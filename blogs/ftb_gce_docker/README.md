@@ -29,7 +29,7 @@ $ sudo gcloud components update
 
 $ sudo docker ps
 ```
-Create [`Dockerfile`](https://github.com/juliaferraioli/code_snippets/blogs/ftb_gce_docker/Dockerfile) and [`CheckEula.sh`](https://github.com/juliaferraioli/code_snippets/blogs/ftb_gce_docker/CheckEula.sh) on development environment.
+Create [`Dockerfile`](https://github.com/juliaferraioli/code_snippets/blogs/ftb_gce_docker/Dockerfile) and [`CheckEula.sh`](https://github.com/juliaferraioli/code_snippets/blob/master/blogs/ftb_gce_docker/CheckEula.sh) on development environment.
 
 Executed in the directory with created files.
 
