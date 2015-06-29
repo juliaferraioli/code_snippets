@@ -11,7 +11,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.--->
 
-This repository accompanies the [Running a Minecraft server on Google Compute Engine with Docker](http:/www.blog.juliaferraioli.com/tbd) blog entry, published on $DATE. Please follow along in the blog entry, as it provides context and explanation for this repository's contents. Files and commands may require updating as future versions of `docker` and `gcloud` are released.
+This repository accompanies the [Running a Minecraft server on Google Compute Engine with Docker](http://www.blog.juliaferraioli.com/2015/06/running-minecraft-server-on-google.html) blog entry, published on $DATE. Please follow along in the blog entry, as it provides context and explanation for this repository's contents. Files and commands may require updating as future versions of `docker` and `gcloud` are released.
 
 Executed on local machine:
 
@@ -29,7 +29,7 @@ $ sudo gcloud components update
 
 $ sudo docker ps
 ```
-Create [`Dockerfile`](https://github.com/juliaferraioli/code_snippets/blogs/ftb_gce_docker/Dockerfile) and [`CheckEula.sh`](https://github.com/juliaferraioli/code_snippets/blob/master/blogs/ftb_gce_docker/CheckEula.sh) on development environment.
+Create [`Dockerfile`](https://github.com/juliaferraioli/code_snippets/blob/master/blogs/ftb_gce_docker/Dockerfile) and [`CheckEula.sh`](https://github.com/juliaferraioli/code_snippets/blob/master/blogs/ftb_gce_docker/CheckEula.sh) on development environment.
 
 Executed in the directory with created files.
 
