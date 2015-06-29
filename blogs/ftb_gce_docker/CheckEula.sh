@@ -20,9 +20,9 @@ elif  echo $EULA | grep -qi true ; then
   echo "eula=$EULA" >> /opt/ftb/eula.txt
 else
   echo ""
-  echo "To accept the Minecraft EULA hosted at"
+  echo "Please accept the Minecraft EULA hosted at"
   echo "  https://account.mojang.com/documents/minecraft_eula"
-  echo "please add ' -e EULA=TRUE' immediately after 'docker run'"
+  echo "by adding ' -e EULA=TRUE' after 'docker run'"
   echo ""
   > /opt/ftb/eula.txt
   exit 1
