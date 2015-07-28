@@ -11,7 +11,11 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.--->
 
-This repository accompanies the [Running a Minecraft server on Google Compute Engine with Docker](http://www.blog.juliaferraioli.com/2015/06/running-minecraft-server-on-google.html) blog entry, published on $DATE. Please follow along in the blog entry, as it provides context and explanation for this repository's contents. Files and commands may require updating as future versions of `docker` and `gcloud` are released.
+#Running a Minecraft server on Google Compute Engine with Docker
+
+This repository accompanies the [Running a Minecraft server on Google Compute Engine with Docker](http://www.blog.juliaferraioli.com/2015/06/running-minecraft-server-on-google.html) blog entry, published on 29 June 2015. Please follow along in the blog entry, as it provides context and explanation for this repository's contents. Files and commands may require updating as future versions of `docker` and `gcloud` are released.
+
+## Set up
 
 Executed on local machine:
 
@@ -22,6 +26,8 @@ $ gcloud auth login
 
 $ glcoud compute ssh minecraft-docker --zone  us-central1-f
 ```
+
+## Create and build Minecraft container
 
 Executed on development environment:
 ```bash
@@ -42,7 +48,10 @@ $ sudo docker tag <image id> gcr.io/<project id>/ftb
 
 $ sudo gcloud docker push gcr.io/<project id>/ftb
 ```
-Executed on  local machine:
+
+## Create server instance and run container
+
+Executed on local machine:
 
 ```bash
 $ gcloud compute firewall-rules create minecraft-port \
