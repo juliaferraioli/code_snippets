@@ -13,7 +13,7 @@ limitations under the License.--->
 
 #Saving the world: using persistent storage with a containerized Minecraft server
 
-This repository accompanies the [Running a Minecraft server on Google Compute Engine with Docker](http://www.blog.juliaferraioli.com/2015/07/saving-world-using-persistent-storage.html) blog entry, published on $DATE. It builds upon the [first entry in the series](http://www.blog.juliaferraioli.com/2015/06/running-minecraft-server-on-google.html), which covers building and running the Minecraft server container. Please follow along in the blog entry, as it provides context and explanation for this repository's contents. Files and commands may require updating as future versions of `docker` and `gcloud` are released.
+This repository accompanies the [Running a Minecraft server on Google Compute Engine with Docker](http://www.blog.juliaferraioli.com/2015/07/saving-world-using-persistent-storage.html) blog entry, published on 30 July 2015. It builds upon the [first entry in the series](http://www.blog.juliaferraioli.com/2015/06/running-minecraft-server-on-google.html), which covers building and running the Minecraft server container. Please follow along in the blog entry, as it provides context and explanation for this repository's contents. Files and commands may require updating as future versions of `docker` and `gcloud` are released.
 
 ## Saving the world on a persistent disk
 
