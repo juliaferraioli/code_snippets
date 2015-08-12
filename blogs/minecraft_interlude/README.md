@@ -20,14 +20,14 @@ This repository accompanies the [Minecraft, Docker, Compute Engine: an interlude
 Look at the `server.properties` file on `minecraft-server`:
 
 ```bash
-minecraft-server $ sudo docker exec -ti &lt;container name&gt; /bin/bash
+minecraft-server $ sudo docker exec -ti <container name> /bin/bash
 
-root@baea2dfbd18f:/opt/ftb&#35; more server.properties
+root@baea2dfbd18f:/opt/ftb# more server.properties
 ```
 
 ```bash
 #Minecraft server properties
-&lt; snip! &gt;
+< snip! >
 server-port=25565
 level-type=DEFAULT
 enable-rcon=false
@@ -44,12 +44,12 @@ online-mode=true
 resource-pack=
 pvp=true     
 difficulty=1 
-&lt; snip! &gt;
+< snip! >
 ```
 
 Modify the file inside the container:
 ```bash
-root@baea2dfbd18f:/opt/ftb# echo "&lt;full modified content of server.properties&gt;" > server.properties
+root@baea2dfbd18f:/opt/ftb# echo "<full modified content of server.properties>" > server.properties
 ```
 
 Exit the container and commit the changes to the image:
@@ -58,7 +58,7 @@ Exit the container and commit the changes to the image:
 root@baea2dfbd18f:/opt/ftb# exit
 minecraft-server $ sudo docker commit -m "customized the server.properties" \
                                 -a "Jane Doe" \
-                                &lt;container id&gt; &lt;docker user&gt;/ftb:v2
+                                <container id> <docker user>/ftb:v2
 ```
 
 Verify that the image has been updated:
@@ -69,12 +69,12 @@ minecraft-server $ sudo docker images
 
 ```bash
 REPOSITORY    TAG IMAGE ID  CREATED   VIRTUAL SIZE
-&lt;docker user&gt;/ftb v2  9ead6660604b  7 seconds ago 1.013 GB
+<docker user>/ftb v2  9ead6660604b  7 seconds ago 1.013 GB
 ```
 
 Push the changes to Google Container Registry:
 
 ```bash
-minecraft-server $ sudo docker tag &lt;docker user&gt;/ftb:v2 gcr.io/&lt;project id&gt;/ftb-v2
-minecraft-server $ sudo gcloud docker push gcr.io/&lt;project id&gt;/ftb-v2
+minecraft-server $ sudo docker tag <docker user>/ftb:v2 gcr.io/<project id>/ftb-v2
+minecraft-server $ sudo gcloud docker push gcr.io/<project id>/ftb-v2
 ```
