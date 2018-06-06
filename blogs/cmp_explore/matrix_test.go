@@ -72,7 +72,7 @@ func TestAdd(t *testing.T) {
 		wantErr  bool
 	}{
 		{
-			name: "Zero matrices should sum to zero",
+			name: "Zero matrices should add to zero",
 			matrices: []Matrix{
 				Matrix{{0, 0}, {0, 0}},
 				Matrix{{0, 0}, {0, 0}},
@@ -81,7 +81,7 @@ func TestAdd(t *testing.T) {
 			wantErr: false,
 		},
 		{
-			name: "One matrix should sum to itself",
+			name: "One matrix should add to itself",
 			matrices: []Matrix{
 				Matrix{{2, 3}, {4, 5}},
 			},
@@ -89,7 +89,7 @@ func TestAdd(t *testing.T) {
 			wantErr: false,
 		},
 		{
-			name: "2x2 matrices should sum properly",
+			name: "2x2 matrices should add properly",
 			matrices: []Matrix{
 				Matrix{{2, 6}, {1, 9}},
 				Matrix{{4, 7}, {0, 3}},
