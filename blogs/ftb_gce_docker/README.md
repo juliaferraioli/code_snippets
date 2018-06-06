@@ -11,7 +11,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.--->
 
-#Running a Minecraft server on Google Compute Engine with Docker
+# Running a Minecraft server on Google Compute Engine with Docker
 
 This repository accompanies the [Running a Minecraft server on Google Compute Engine with Docker](http://www.blog.juliaferraioli.com/2015/06/running-minecraft-server-on-google.html) blog entry, published on 29 June 2015. Please follow along in the blog entry, as it provides context and explanation for this repository's contents. Files and commands may require updating as future versions of `docker` and `gcloud` are released.
 
