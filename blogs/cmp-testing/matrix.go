@@ -21,6 +21,7 @@ import (
 
 type Matrix [][]float64
 
+// New allocates a new 2-dimensional, float64 matrix.
 func New(rows, cols int) Matrix {
 	mat := make([][]float64, rows)
 	for col := range mat {
@@ -29,6 +30,7 @@ func New(rows, cols int) Matrix {
 	return mat
 }
 
+// Add sums a slice of matrices, and will return an error if the dimensions are incompatible.
 func Add(matrices ...Matrix) (Matrix, error) {
 	sum := New(len(matrices[0]), len(matrices[0][0]))
 	for _, m := range matrices {
