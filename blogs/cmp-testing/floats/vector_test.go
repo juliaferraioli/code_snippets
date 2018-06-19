@@ -77,11 +77,11 @@ func TestAdd(t *testing.T) {
 	tolerance := .00001
 	opt := cmp.Comparer(func(x, y float64) bool {
 		diff := math.Abs(x - y)
-		mean := math.Abs(x+y) / 2.0
+		mean := math.Abs(x + y) / 2.0
 		if math.IsNaN(diff / mean) {
 			return true
 		}
-		return diff/mean < tolerance
+		return (diff / mean) < tolerance
 	})
 
 	for _, tt := range tests {
